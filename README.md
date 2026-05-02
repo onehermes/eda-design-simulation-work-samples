@@ -49,7 +49,7 @@ This repository is also meant to support AI research and EDA asset evaluation wo
 ## Portfolio Links
 
 - Portfolio: https://dev.parley.live
-- GitHub: https://github.com/YOUR_USERNAME
+- GitHub: https://github.com/onehermes
 
 ## Notes
 
