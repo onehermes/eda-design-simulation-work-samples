@@ -1,30 +1,58 @@
 # Electronics Design & Simulation - EDA Work Samples
 
+![Scope](https://img.shields.io/badge/scope-self--directed-0F766E?style=flat-square)
+![Focus](https://img.shields.io/badge/focus-EDA%20%2B%20simulation-2563EB?style=flat-square)
+![Tools](https://img.shields.io/badge/tools-KiCad%20%7C%20LibrePCB%20%7C%20Ngspice%20%7C%20Qucs--S-7C3AED?style=flat-square)
+![License](https://img.shields.io/badge/license-MIT-475569?style=flat-square)
+
 This repository is a self-directed portfolio of electronics design and simulation work samples. It shows how I document circuit behavior, review schematic and PCB workflows, and evaluate AI-generated EDA content with an emphasis on correctness, reproducibility, and explicit assumptions. It is not client work, not a manufactured product set, and not proof of physical board validation.
 
-## Portfolio Map
+## Portfolio Snapshot
+
+<table>
+  <tr>
+    <td valign="top" width="33%">
+      <strong>Simulation</strong><br>
+      RC low-pass filter in ngspice<br>
+      AC source, resistor, capacitor, and ground<br>
+      Cutoff frequency and frequency-response review
+    </td>
+    <td valign="top" width="33%">
+      <strong>Workflow</strong><br>
+      555 timer LED blinker<br>
+      KiCad schematic flow, ERC, DRC, and footprints<br>
+      PCB layout and Gerber generation notes
+    </td>
+    <td valign="top" width="33%">
+      <strong>Review</strong><br>
+      EDA AI output quality review<br>
+      Find flaws, rewrite instructions, and verify assumptions<br>
+      Reproducible evaluation checklist
+    </td>
+  </tr>
+</table>
 
 The diagram below shows how the repository is organized around simulation, workflow review, and AI-output evaluation.
 
 ```mermaid
 flowchart TB
-    A[Self-directed EDA portfolio] --> B[Project 1<br/>RC low-pass filter]
-    A --> C[Project 2<br/>555 timer LED blinker]
-    A --> D[Project 3<br/>AI output quality review]
+    A[EDA work-sample portfolio] --> B[Simulation track]
+    A --> C[Workflow track]
+    A --> D[Review track]
 
-    B --> B1[ngspice netlist]
-    B --> B2[AC sweep and cutoff frequency]
-    B --> B3[Expected results and checklist]
+    B --> B1[RC low-pass filter]
+    B --> B2[ngspice netlist]
+    B --> B3[Expected results]
 
-    C --> C1[KiCad schematic workflow]
-    C --> C2[ERC, DRC, footprints, Gerbers]
-    C --> C3[Simulation vs hardware limits]
+    C --> C1[555 timer LED blinker]
+    C --> C2[KiCad ERC and DRC]
+    C --> C3[Footprints and Gerbers]
 
-    D --> D1[Find flaws in generated instructions]
-    D --> D2[Rewrite for clarity and reproducibility]
-    D --> D3[Evaluation checklist]
+    D --> D1[Flawed AI answer]
+    D --> D2[Review findings]
+    D --> D3[Improved answer]
 
-    classDef root fill:#1F2937,stroke:#111827,color:#FFFFFF;
+    classDef root fill:#111827,stroke:#111827,color:#FFFFFF;
     classDef sim fill:#E8F7EE,stroke:#2E7D32,color:#111111;
     classDef workflow fill:#FFF4E5,stroke:#C47F00,color:#111111;
     classDef review fill:#FDECF4,stroke:#A61B55,color:#111111;
@@ -35,6 +63,8 @@ flowchart TB
 ```
 
 ## About
+
+Description: this is a self-directed EDA work-sample portfolio focused on circuit simulation documentation, schematic and PCB workflow review, and AI-output evaluation.
 
 The goal of this portfolio is to show how I approach electronics tasks with the same discipline I use in software engineering: clear requirements, explicit assumptions, reproducible steps, and structured review. Each sample is built to be readable on its own and to demonstrate how I think about a circuit from the brief, through the simulation or workflow steps, to the documented result and limitations.
 
